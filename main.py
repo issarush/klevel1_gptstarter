@@ -3,7 +3,7 @@ from langchain import OpenAI
 import sys
 import os
 
-os.environ['OPENAI_API_KEY'] = ''
+os.environ['OPENAI_API_KEY'] = input("Enter your OPENAI API Key:")
 
 def createVectorIndex(path):
   max_input = 4096
