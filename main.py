@@ -15,7 +15,7 @@ def createVectorIndex(path):
   promptHelper = PromptHelper(max_input,tokens,max_chunk_overlap,chunk_size_limit=chunk_size)
   
   #define LLM — there could be many models we can use, but in this example, let’s go with OpenAI model
-  llmPredictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-ada-001",max_tokens=tokens))
+  llmPredictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003",max_tokens=tokens))
   
   #load data — it will take all the .txt files, if there are more than 1
   docs = SimpleDirectoryReader(path).load_data()
