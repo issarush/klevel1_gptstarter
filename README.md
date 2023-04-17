@@ -1,5 +1,5 @@
 # klevel1_gptstarter
-After initializing a virtual environment, install the dependencies and run the main python file.
+After initializing a virtual environment, install the dependencies from the requirements.txt and run the main python file.
 Upon execution, you are asked to provide a OPENAI Key, followed with a prompt regarding the data in the Knowledge folder.
 
 Then, you receive a response.
