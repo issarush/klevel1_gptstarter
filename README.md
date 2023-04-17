@@ -2,6 +2,7 @@
 After initializing a virtual environment, install the dependencies and run the main python file.
 Upon execution, you are asked to provide a prompt for the GPT model
 Then, you receive a response.
+- Don't forget to pass in the OPENAI key during local execution.
 
 
 The model is using data from the text file present in the Knowledge directory.
