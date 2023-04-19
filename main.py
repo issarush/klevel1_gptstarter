@@ -2,16 +2,27 @@ from gpt_index import SimpleDirectoryReader,GPTListIndex,GPTSimpleVectorIndex,LL
 from langchain import OpenAI
 import sys
 import os
-import aspose.words as aw
+import aspose.words as aw 
+# import docx (for mac users)
 
 os.environ['OPENAI_API_KEY'] = input("Enter your OPENAI API Key:")
 
-# Convert all .docx files in Docsfiles folder and save them in Knowledge folder as .txt files using aspose.words converter library
+# Convert all .docx files in Docsfiles folder and save them in Knowledge folder as .txt files
+
+#Conversion code for windows users
 directory = 'Docsfiles'
 for filename in os.listdir(directory):
     if filename.endswith('.docx'):
         doc = aw.Document(f'Docsfiles/{filename}')
         doc.save(f'Knowledge/{filename[:-5]}.txt')
+
+#Conversion code for mac users
+# directory = 'Docsfiles'
+# for filename in os.listdir(directory):
+#     if filename.endswith('.docx'):
+#         doc = docx.Document(os.path.join(directory, filename))
+#         with open(os.path.join('Knowledge', f'{filename[:-5]}.txt'), 'w') as f:
+#             f.write('\n'.join([p.text for p in doc.paragraphs]))
 
 
 def createVectorIndex(path):
