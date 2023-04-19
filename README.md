@@ -1,9 +1,13 @@
 # klevel1_gptstarter
 Installation and Usage:  
 1-Clone the repository to your local machine.  
+git clone https://github.com/issarush/klevel1_gptstarter.git   
 2-Change into the project directory.  
 3-Initialize a virtual environment.  
-4-Activate the virtual environment.  
+python -m venv [envname] 
+4-Activate the virtual environment.   
+Mac: source [envname]/bin/activate
+Windows: [envname]/Scripts/Activate
 5-Install the project dependencies from the requirements.txt.  
 6-Run the Main python file.  
 7-You will be asked to provide the OPENAI KEY, followed by a prompt regarding the data in the Knowledge folder.  
