@@ -8,6 +8,7 @@ python -m venv [envname]
 4-Activate the virtual environment.   
 Mac: source [envname]/bin/activate. 
 Windows: [envname]/Scripts/Activate. 
+  
 5-Install the project dependencies from the requirements.txt.  
 6-Run the Main python file.  
 7-You will be asked to provide the OPENAI KEY, followed by a prompt regarding the data in the Knowledge folder.  
