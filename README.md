@@ -6,10 +6,10 @@ Installation and Usage:
 3-Initialize a virtual environment.  
 `python -m venv [envname]`   
 4-Activate the virtual environment.   
-Mac: source `[envname]/bin/activate.` 
-Windows: `[envname]/Scripts/Activate` 
-5-Install the project dependencies from the requirements.txt `pip install -r requirements.txt`
-6-Place .docx files inside the Docsfiles folder
+Mac: source `[envname]/bin/activate.`. 
+Windows: `[envname]/Scripts/Activate`. 
+5-Install the project dependencies from the requirements.txt `pip install -r requirements.txt`. 
+6-Place .docx files inside the Docsfiles folder. 
 7-Run the Main python file via `python main.py`
 8-You will be asked to provide the OPENAI KEY, followed by a prompt regarding the data in the Knowledge folder.  
 9-You will receive a response.  
