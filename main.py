@@ -2,8 +2,16 @@ from gpt_index import SimpleDirectoryReader,GPTListIndex,GPTSimpleVectorIndex,LL
 from langchain import OpenAI
 import sys
 import os
+import aspose.words as aw
 
 os.environ['OPENAI_API_KEY'] = input("Enter your OPENAI API Key:")
+
+# Convert all .docx files in Docsfiles folder to .txt files and save them in Knowledge folder
+directory = 'Docsfiles'
+for filename in os.listdir(directory):
+    if filename.endswith('.docx'):
+        doc = aw.Document(f'Docsfiles/{filename}')
+        doc.save(f'Knowledge/{filename[:-5]}.txt')
 
 def createVectorIndex(path):
   max_input = 4096
@@ -34,6 +42,9 @@ def answerMe(vectorIndex):
   vIndex = GPTSimpleVectorIndex.load_from_disk(vectorIndex)
   while True:
     prompt = input('Please ask: ')
+    #if prompt is empty, break the loop
+    if prompt == '':
+      break
     response = vIndex.query(prompt,response_mode='compact')
     print(f'Response: {response} \n')
 
