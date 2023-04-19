@@ -13,9 +13,10 @@ Installation and Usage:
 5. Install the project dependencies from the requirements.txt.
    `pip install -r requirements.txt`.
 6. Place .docx files inside the Docsfiles folder.
-7. Run the Main python file via `python main.py`.
-8. You will be asked to provide the OPENAI KEY, followed by a prompt regarding the data in the Knowledge folder.
-9. You will receive a response.
+7. Comment out the conversion code in `main.py` file based on OS
+8. Run the Main python file via `python main.py`.
+9. You will be asked to provide the OPENAI KEY, followed by a prompt regarding the data in the Knowledge folder.
+10. You will receive a response.
 
 Adding or Modifying Documents:
 
