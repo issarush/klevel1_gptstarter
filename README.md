@@ -1,5 +1,5 @@
 # klevel1_gptstarter
-1-Clone the repository to your local machine.
+1-Clone the repository to your local machine.  
 2-Change into the project directory.
 3-Initialize a virtual environment.
 4-Activate the virtual environment.
