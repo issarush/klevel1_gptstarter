@@ -12,6 +12,7 @@ Installation and Usage:
 Adding or Modifying Documents:  
 The model is using data from the text file(s) present in the Knowledge directory. So to add or modify the documents that the code uses, you can add or modify text files in the Knowledge directory. Each text file should contain one or more documents, separated by a blank line.  
 
+Notes:  
+The createVectorIndex function uses OpenAI's GPT-3 language model to generate vector representations of the text data in the specified directory. These vectors are then saved to a JSON file that can be loaded into memory and used by the answerMe function to generate responses to user input.
 
-Note - the data from the txt file(s) inside that directory is being transformed into a json format via vectorIndex.  
-This is then parsed into the answerMe function to generate the prompt.
+The interact.py script contains the answerMe function, which takes as input the path to the JSON file containing the indexed data. The user is prompted to provide a question or prompt, and the GPT model generates a response based on the indexed data.
