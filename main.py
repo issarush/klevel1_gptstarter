@@ -6,12 +6,13 @@ import aspose.words as aw
 
 os.environ['OPENAI_API_KEY'] = input("Enter your OPENAI API Key:")
 
-# Convert all .docx files in Docsfiles folder to .txt files and save them in Knowledge folder
+# Convert all .docx files in Docsfiles folder and save them in Knowledge folder as .txt files using aspose.words converter library
 directory = 'Docsfiles'
 for filename in os.listdir(directory):
     if filename.endswith('.docx'):
         doc = aw.Document(f'Docsfiles/{filename}')
         doc.save(f'Knowledge/{filename[:-5]}.txt')
+
 
 def createVectorIndex(path):
   max_input = 4096
