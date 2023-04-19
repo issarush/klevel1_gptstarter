@@ -7,7 +7,6 @@ git clone https://github.com/issarush/klevel1_gptstarter.git
 python -m venv [envname]   
 4-Activate the virtual environment.   
 Mac: source [envname]/bin/activate. 
-
 Windows: [envname]/Scripts/Activate. 
 5-Install the project dependencies from the requirements.txt.  
 6-Run the Main python file.  
